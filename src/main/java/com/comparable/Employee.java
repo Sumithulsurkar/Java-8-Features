@@ -13,5 +13,6 @@ public class Employee implements Comparable<Employee> {
     @Override
     public int compareTo(Employee empObject) {
         return this.name.compareTo(empObject.name);
+        //return this.contact - empObject.contact; to compare int type of values
     }
 }

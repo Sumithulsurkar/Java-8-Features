@@ -7,14 +7,14 @@ import java.util.TreeSet;
 
 public class MainClass {
 
-    /* We can only sort the data wrt to only one property
-       We have to implement comparator interface with the same class  */
+    /* Using comparable we can use only one comparison.
+       Whereas, we can write more than one custom comparators as you want */
 
     public static void main(String[] args) {
 
-        //Set<com.comparator.Employee> empSet = new TreeSet<>( new SortByCityComparator());
+        Set<com.comparator.Employee> empSet = new TreeSet<>( new SortByCityComparator());
 
-        Set<com.comparator.Employee> empSet = new TreeSet<>( new SortByContactComparator());
+        //Set<com.comparator.Employee> empSet = new TreeSet<>( new SortByContactComparator());
 
         empSet.add(new com.comparator.Employee("Sumit", "Delhi",1245868));
         empSet.add(new com.comparator.Employee("Ramesh", "Pune", 88457567));
