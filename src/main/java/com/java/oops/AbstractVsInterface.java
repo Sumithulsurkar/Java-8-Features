@@ -21,7 +21,7 @@ import java.io.Reader;
  *
  * 	- Here we can't establish any relation through Serializable interface between Employee and Game,
  * 	- which are meant for different purpose.
- * 	- Both are capable of Serializing the state and the comparasion ends there.
+ * 	- Both are capable of Serializing the state and the comparision ends there.
  *
  * Abstract class:
  * 	- IS A relation
@@ -46,7 +46,6 @@ public class AbstractVsInterface {
     };
 
     FileReader f;
-
     {
         try {
             f = new FileReader("s");
