@@ -9,8 +9,8 @@ public class NestedExceptions {
         int a = 1, b = 0, c;
 
         try {
-            //c = a/b;
-            //System.out.println("Addition is : " +c);
+            c = a/b;
+            System.out.println("Addition is : " +c);
             try {
                 String s = null;
                 String s1 = "Hi";

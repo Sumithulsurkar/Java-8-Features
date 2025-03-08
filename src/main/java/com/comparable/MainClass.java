@@ -7,7 +7,7 @@ import java.util.*;
     Natural order, sorted automatically by using Collections.sort() or Arrays.sort()
     */
 
-public class MainClass {
+public class    MainClass {
 
     public static void main(String[] args) {
        Set<Employee> empSet = new TreeSet<Employee>();

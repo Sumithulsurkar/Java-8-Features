@@ -9,7 +9,6 @@ public class Employee implements Comparable<Employee> {
         this.name = name;
         this.contact = contact;
     }
-
     @Override
     public int compareTo(Employee empObject) {
         return this.name.compareTo(empObject.name);

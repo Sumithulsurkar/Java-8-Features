@@ -1,7 +1,7 @@
 package com.interviews;
-import java.sql.*;
-import java.text.*;
-import java.util.*;
+
+import java.util.Arrays;
+import java.util.List;
 public class CodingPuzzels {
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class CodingPuzzels {
                             System.out.print(x + " ");
         // 3rd approach
                 int n = list.size();
-                String[] arr2 = list.stream().toArray(String[]::new); // Converting List to array via scope resolution operator using streams
+                String[] arr2 = list.stream().toArray(String[]::new); // Converting List to array via method reference using streams
 
                 for (String x : arr2)                    // Printing elements of array on console
                     System.out.print(x + " ");

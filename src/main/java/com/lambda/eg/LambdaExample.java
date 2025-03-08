@@ -1,7 +1,5 @@
 package com.lambda.eg;
 
-import com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI;
-
 import java.util.ArrayList;
 import java.util.List;
 
