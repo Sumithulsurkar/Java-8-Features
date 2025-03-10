@@ -55,11 +55,12 @@ public class EmployeeStreamDemo {
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting())));
 
 
-       /* Predicate<Employee> empPredicate = employee -> employee.getDepartment().equals("IT");
+        Predicate<Employee> empPredicate = employee -> employee.getDepartment().equals("IT");
         Predicate<Employee> eP = epp -> epp.getSalary() > 60000;
 
-        *//*display(empPredicate, employeeList);
-        display(eP, employeeList);*//*
+        display(empPredicate, employeeList);
+
+        display(eP, employeeList);
 
         System.out.println("Predicate's DEFAULT and Method DEMO ");
         display(empPredicate.and(eP), employeeList);
@@ -132,6 +133,5 @@ public class EmployeeStreamDemo {
         System.out.println("========================================================= ");
 
         System.out.println("========================================================= ");
-*/
     }
 }

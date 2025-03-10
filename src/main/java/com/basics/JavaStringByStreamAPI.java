@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
 
 public class JavaStringByStreamAPI {
 
-
     public static void main(String[] args) {
 
         System.out.println("Get Number of vowels ================ Way 1");
@@ -23,7 +22,9 @@ public class JavaStringByStreamAPI {
                 .count();
         System.out.println("Number of vowels: " + count + "\n");
 
-        String trimmedInput = str.trim();
+        String s = "I love coding";
+
+        String trimmedInput = s.toLowerCase().trim();
         Map<Character, Long> data = trimmedInput.chars()
                 .filter(c -> !Character.isWhitespace(c))
                 .mapToObj(c -> (char) c)
